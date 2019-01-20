@@ -13,6 +13,8 @@ import Messages from './pages/UI/Messages';
 import Tabs from './pages/UI/Tabs';
 import Gallery from './pages/UI/Gallery';
 import Carousels from './pages/UI/Carousels';
+import FormLogin from './pages/Form/Login';
+import FormRegister from './pages/Form/Register';
 
 const ERouter = () => (
   <HashRouter>
@@ -33,6 +35,8 @@ const ERouter = () => (
                 <Route path="/ui/tabs" component={Tabs} />
                 <Route path="/ui/gallery" component={Gallery} />
                 <Route path="/ui/carousels" component={Carousels} />
+                <Route path="/form/login" component={FormLogin} />
+                <Route path="/form/reg" component={FormRegister} />
 
                 <Redirect to="/home" />
               </Switch>
